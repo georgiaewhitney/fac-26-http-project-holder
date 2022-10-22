@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Pictures</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+
+
+ <!--Search landing page-->
+  <section id="search-hub">
+    <div id="header">
+      <h1>Moving Pictures</h1>
+      <p>delve into the database below</p>
+    </div>
+     <div>
+      <form action="" id="form">
+        <input type="text" id="search" placeholder="type to explore">
+        <button type="button" id="btn" onclick={handleEvents()}>search</button>
+      </form>
+    </div>
+  </section>
+    
+<!-- Results page -->
+    <section id="results-hub">
+        <div id="movie-name">
+            <button type="button" id="back-icon" onclick={handleBack()}>
+              Back to search
+            </button>
+            <h1 id="search-title">search item</h1>
+        </div>
+        <div id="results">
+            
+        </div>
+    </section>
+    
+    <!-- Unnsuccessful search -->
+    <section id="unsuccess-panel">
+        <div id="message-box">
+            <p id="message">You are not connected to the internet</p>
+            <button type="button" id="back" onclick={handleBack()}>Back</button>
+        </div>
+    </section>
+
+    
+    <!-- Film Panels -->
+    <section id="film-info-panel">
+        <div id="panel">
+            <button id="film-info-close-btn" onclick={handleClose()}>
+                Close Window X
+            </button>
+            <div id="panel-body">
+                <p id="panel-name">Movie Name</p>
+                <img src="" alt="the poster of the film you've selected" id="panel-img">
+                <p id="panel-title"><strong>Title - </strong><span id="title">Avengers</span></p>
+                <p id="panel-rating"><strong>Rating - </strong><span id="rating">8.3</span></p>
+                <p id="panel-language"><strong>Language - </strong><span id="language">English</span></p>
+                <p id="panel-date"><strong>Release Date - </strong><span id="date">2014-04-12</span></p>
+                <p id="panel-description"><strong>Description - </strong><span id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta earum architecto esse atque alias eveniet optio illum! Atque commodi similique fugit! Molestiae, quam illo.</span></p>
+            </div>
+        </div>
+    </section>
+   
+
+
+   <script src="script.js"></script>
+</body>
+</html>
