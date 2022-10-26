@@ -72,9 +72,10 @@ function heroinfo() {
 function showDiv() {
     document.getElementById("info").style.display ="block";
 }
-
+/*
 function passvalues() {
     var name = document.getElementById('Name').value;
     localStorage.setItem("textvalue",name);
     return false;
 }
+*/
