@@ -46,6 +46,19 @@
 #search:focus{
   background: rgb(233, 233, 233);
 }
+
+#Name{
+  font-size: 1.3rem;
+  padding: 1rem 0.8rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  background: rgb(207, 207, 207);
+  outline: none;
+  border: none;
+}
+#Name:focus{
+  background: rgb(233, 233, 233);
+}
+
 #btn{
   font-size: 1.3rem;
   padding: 1rem 1rem;

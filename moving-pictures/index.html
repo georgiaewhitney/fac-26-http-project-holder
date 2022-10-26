@@ -20,15 +20,41 @@
       <h1>Moving Pictures</h1>
       <p>delve into the database below</p>
     </div>
+    <!--Film Search-->
      <div>
       <form action="" id="form">
         <input type="text" id="search" placeholder="type to explore">
-        <button type="button" id="btn" onclick={handleEvents()}>search</button>
+        <button type="button" id="btn" onclick="handleEvents();">search moving pictures</button>
       </form>
     </div>
+
+
+    <section id="marvel-hub">
+      <!--Marvel Search-->
+      <div>
+        <input type="search" name="Name" id="Name" placeholder="explore marvel...">
+        <button type="button" id="btn" onclick="showDiv(); heroinfo(); passvalues()">search marvel</button>
+      </div>
+        
+      <div id="info" style="display:none">
+              <p id="heroname">NAME: </p>
+               <p id="herodescription">DESCRIPTION: </p>
+               
+               <form action="index.html"></form>
+               <center><a href="/film.html"><button id="access" onclick="handleEvents()">ACCESS FILES</button></a></center>
+              </form>
+      </div>
+        </section>
+       
+       <!--<form action="index.html"></form>
+       <center><a href="/film.html"><button id="access" onclick="handleEvents()">ACCESS FILES</button></a></center>
+      </form>-->
   </section>
     
 <!-- Results page -->
+
+
+
     <section id="results-hub">
         <div id="movie-name">
             <button type="button" id="back-icon" onclick={handleBack()}>
@@ -39,6 +65,8 @@
         <div id="results">
             
         </div>
+
+        
     </section>
     
     <!-- Unnsuccessful search -->
@@ -71,5 +99,7 @@
 
 
    <script src="script.js"></script>
+   <script src="https://www.myersdaily.org/joseph/javascript/md5.js"></script>
+   <script src="marvel.js"></script>
 </body>
 </html>

@@ -99,3 +99,6 @@ function handleClose(){
     filmInfoPanel.style.display = "none";
     body.style.overflow = "auto"
 }
+
+
+////////////
