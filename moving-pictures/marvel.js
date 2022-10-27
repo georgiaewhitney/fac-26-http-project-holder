@@ -70,7 +70,13 @@ function heroinfo() {
 }
 
 function showDiv() {
-    document.getElementById("info").style.display ="block";
+    document.getElementById("info").style.display = "inherit";
+}
+
+function addToSearch() {
+    document.getElementById('Name').addEventListener("click", function() {
+        this.value = document.getElementById('search').value;
+      });
 }
 
 function passvalues() {

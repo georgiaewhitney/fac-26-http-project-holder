@@ -14,41 +14,46 @@
 <body id="body">
 
 
+
  <!--Search landing page-->
   <section id="search-hub">
-    <div id="header">
-      <h1>Moving Pictures</h1>
-      <p>delve into the database below</p>
-    </div>
+    
+    <header>
+      <div id="header">
+        <h1>Moving Pictures // Marvel Hub</h1>
+        <p>delve into the database below</p>
+      </div>
+    </header>
+
     <!--Film Search-->
      <div>
+      <p class="intro-text">delve into the database of film and television via tmdb's API.</p>
       <form action="" id="form">
         <input type="text" id="search" placeholder="type to explore">
         <button type="button" id="btn" onclick="handleEvents();">search moving pictures</button>
       </form>
     </div>
 
-
+       <!--Marvel Search-->
     <section id="marvel-hub">
-      <!--Marvel Search-->
+     
+      <p class="intro-text">delve into the Marvel character database via the Marvel API.</p>
       <div>
         <input type="search" name="Name" id="Name" placeholder="explore marvel...">
         <button type="button" id="btn" onclick="showDiv(); heroinfo(); passvalues()">search marvel</button>
       </div>
         
-      <div id="info" style="display:none">
+      <div id="info" style="display: none">
               <p id="heroname">Character: </p>
                <p id="herodescription">Bio: </p>
                
-               <form action="index.html"></form>
-               <center><a href="/film.html"><button id="access" onclick="handleEvents()">ACCESS FILES</button></a></center>
+               
+               <button id="access" onclick="addToSearch()">add to moving pictures</button>
               </form>
       </div>
         </section>
        
-       <!--<form action="index.html"></form>
-       <center><a href="/film.html"><button id="access" onclick="handleEvents()">ACCESS FILES</button></a></center>
-      </form>-->
+      
   </section>
     
 <!-- Results page -->

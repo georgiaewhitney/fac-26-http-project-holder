@@ -8,12 +8,13 @@
 
 /*  Main search page */
 #header{
-  font-size: 2rem;
-  color: #fff;
-  position: absolute;
-  top: 1rem;
-  text-align: center;
-  margin: 0 auto;
+  align-self: flex-start;
+  color: white;
+  font-size: larger;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-family: sans-serif;
 }
 #header h1{
   letter-spacing: 0.8rem;
@@ -28,12 +29,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2.5rem;
 }
 #search-box{
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
   font-weight: 600;
-  margin-bottom: 2rem;
 }
 #search{
   font-size: 1.3rem;
@@ -54,6 +56,7 @@
   background: rgb(207, 207, 207);
   outline: none;
   border: none;
+;
 }
 #Name:focus{
   background: rgb(233, 233, 233);
@@ -84,6 +87,40 @@
   to {background-color: rgba(228, 106, 5, 0.915);}
 }
 
+#access{
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  outline: none;
+  border: none;
+  background: rgba(40, 40, 40, 0.915);
+  color: white;
+  cursor: pointer;
+  margin: 1rem;
+  
+}
+#access:active{
+  animation-name: button-ani;
+  animation-duration: 4s;
+  transform: scale(0.9);
+}
+#access:hover{
+  animation-name: button-ani;
+  animation-duration: 4s;
+}
+
+#info {
+  color: #fff;
+  max-width: 20rem;
+  margin: 2rem;
+}
+
+.intro-text{
+  color: #fff;
+  margin: 2rem;
+  max-width: 20rem;
+
+}
 
 /* Search results */
 #results-hub{
